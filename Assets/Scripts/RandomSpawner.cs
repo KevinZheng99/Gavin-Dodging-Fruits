@@ -4,30 +4,21 @@ using UnityEngine;
 
 public class RandomSpawner : MonoBehaviour
 {
-    public GameObject ItemPrefab;
-    public float Radius = 1;
+    public GameObject fruit;
+    public float waittime;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
+    void Start() {
+        StartCoroutine(FruitSpawn());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space)) SpawnObjectAtRandom();
-    }
+    IEnumerator FruitSpawn() {
+        while (true) {
+            Vector3 fruitspawn = new Vector3(Random.Range(-10f, 10f), 7f, 0);
 
-    void SpawnObjectAtRandom() {
-        Vector3 randomPos = Random.insideUnitCircle * Radius;
+            Instantiate(fruit, fruitspawn, Quaternion.identity);
 
-        Instantiate(ItemPrefab, randomPos, Quaternion.identity);
-    }
-
-    private void OnDrawGizmos() {
-        Gizmos.color = Color.green;
-
-        Gizmos.DrawWireSphere(this.transform.position, Radius);
+            yield return new WaitForSeconds(waittime);
+        }
     }
 }
