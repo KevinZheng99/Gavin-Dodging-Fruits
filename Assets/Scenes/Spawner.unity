@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 7009310272787306202, guid: 318b31ebb953e224289bc58ad63679ec, type: 3}
-  waittime: 5
+  waittime: 0.5
 --- !u!4 &1644366172
 Transform:
   m_ObjectHideFlags: 0
