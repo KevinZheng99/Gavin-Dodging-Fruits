@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class RandomSpawner : MonoBehaviour
 {
-    public GameObject fruit;
+    // public GameObject fruit;
+    public List<GameObject> fruitsToSpawn;
     public float waittime;
 
     // Start is called before the first frame update
@@ -14,11 +15,12 @@ public class RandomSpawner : MonoBehaviour
 
     IEnumerator FruitSpawn() {
         while (true) {
-            Vector3 fruitspawn = new Vector3(Random.Range(-10f, 10f), 7f, 0);
+            foreach(GameObject fruit in fruitsToSpawn) {
+                Vector3 fruitspawn = new Vector3(Random.Range(-10f, 10f), 7f, 0);
+                Instantiate(fruit, fruitspawn, Quaternion.identity);
 
-            Instantiate(fruit, fruitspawn, Quaternion.identity);
-
-            yield return new WaitForSeconds(waittime);
+                yield return new WaitForSeconds(waittime);
+            }
         }
     }
 }
