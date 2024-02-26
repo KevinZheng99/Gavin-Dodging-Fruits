@@ -244,7 +244,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486bfd25b7da36645b4de4ffd31e619d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 7009310272787306202, guid: 318b31ebb953e224289bc58ad63679ec, type: 3}
+  fruitsToSpawn:
+  - {fileID: 5648970456141978887, guid: 6b607b55a1016f748837d90b0a67f26f, type: 3}
+  - {fileID: 7009310272787306202, guid: 318b31ebb953e224289bc58ad63679ec, type: 3}
+  - {fileID: 5164264181175396038, guid: 579bfd779f0232a41b361817adcc8d86, type: 3}
+  - {fileID: 7342025000089649385, guid: 85a3b43faf975824bb378612b0aa27a5, type: 3}
+  - {fileID: 4027588142873342995, guid: a78b2a1b1fd3d2942960b3d6510d567c, type: 3}
+  - {fileID: 600795008631551518, guid: 18c5264374507d645afacc741f057908, type: 3}
+  - {fileID: 7744636883089410479, guid: d4018780d2841814a9085b8cdc8db5d3, type: 3}
+  - {fileID: 8131580889076775511, guid: 89ebfdec34a8b0d48a3a08b5c66eab59, type: 3}
+  - {fileID: 8172931934426537205, guid: 72b980d40c22a7548b573219c1c23f56, type: 3}
+  - {fileID: 7771879665215794179, guid: 8c95430337495d54eaf97e513397ac20, type: 3}
+  - {fileID: 8611153930235008807, guid: 7817e68c5addfc9499a5df774905b415, type: 3}
+  - {fileID: 3065780480763966547, guid: 7b8aa6491a107c049b9603a66bf5d793, type: 3}
+  - {fileID: 5447404813544544616, guid: 275e7148a374b774bbb1adfd47a447cc, type: 3}
   waittime: 0.5
 --- !u!4 &1644366172
 Transform:
