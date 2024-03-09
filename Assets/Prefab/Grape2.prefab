@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9124073028968151000}
   - component: {fileID: 3399320243409937277}
+  - component: {fileID: 1546830684620055606}
   - component: {fileID: 5122569348227694779}
-  - component: {fileID: 6825404506799186054}
   - component: {fileID: -7439604804516273134}
   m_Layer: 0
   m_Name: Grape2
@@ -87,35 +87,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &5122569348227694779
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600795008631551518}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 5
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &6825404506799186054
-BoxCollider2D:
+--- !u!60 &1546830684620055606
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -156,9 +129,46 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.3830431, y: 0.4412174}
+      - {x: -0.44843733, y: 0.18546775}
+      - {x: -0.44070294, y: -0.13203068}
+      - {x: 0.05937597, y: -0.5051563}
+      - {x: 0.18937443, y: -0.5077344}
+      - {x: 0.44328108, y: -0.18617147}
+      - {x: 0.4381248, y: 0.12109333}
+      - {x: 0.25253463, y: 0.31618136}
+      - {x: -0.06186253, y: 0.5060886}
+      - {x: -0.19921994, y: 0.5077344}
+  m_UseDelaunayMesh: 0
+--- !u!50 &5122569348227694779
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600795008631551518}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 5
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!114 &-7439604804516273134
 MonoBehaviour:
   m_ObjectHideFlags: 0

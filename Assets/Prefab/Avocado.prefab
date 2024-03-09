@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4937692478253364177}
   - component: {fileID: 544755077836722888}
+  - component: {fileID: 3553249855150277377}
   - component: {fileID: -5847375130133095564}
-  - component: {fileID: 1181495595000062444}
   - component: {fileID: 6444885985588535960}
   m_Layer: 0
   m_Name: Avocado
@@ -87,35 +87,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &-5847375130133095564
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5648970456141978887}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 5
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &1181495595000062444
-BoxCollider2D:
+--- !u!60 &3553249855150277377
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -156,9 +129,47 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.18617153, y: 0.24992108}
+      - {x: -0.31352127, y: 0.18779841}
+      - {x: -0.5051563, y: 0.0043736696}
+      - {x: -0.5051563, y: -0.3143744}
+      - {x: -0.31099117, y: -0.5033219}
+      - {x: -0.0026569366, y: -0.50515634}
+      - {x: 0.3157339, y: -0.18755867}
+      - {x: 0.43812478, y: 0.06320371}
+      - {x: 0.43721527, y: 0.25123334}
+      - {x: 0.30921817, y: 0.3807811}
+      - {x: 0.12429631, y: 0.37624967}
+  m_UseDelaunayMesh: 0
+--- !u!50 &-5847375130133095564
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5648970456141978887}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 5
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!114 &6444885985588535960
 MonoBehaviour:
   m_ObjectHideFlags: 0
