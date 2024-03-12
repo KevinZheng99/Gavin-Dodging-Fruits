@@ -10,10 +10,4 @@ public class Despawner : MonoBehaviour
     {
         Destroy(gameObject, lifetime); // Destroys this fruit object after 'lifetime' seconds
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
