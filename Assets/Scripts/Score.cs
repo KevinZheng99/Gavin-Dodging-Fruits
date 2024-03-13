@@ -12,7 +12,7 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        score = (int)Time.time;
+        score = (int)Time.timeSinceLevelLoad;
         scoreText.text = "Score: "  + score.ToString();
     }
 }
