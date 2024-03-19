@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8131580889076775511
+--- !u!1 &7009310272787306202
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,30 +8,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1140637692413581889}
-  - component: {fileID: 2357317778979217988}
-  - component: {fileID: 3281272216351533942}
-  - component: {fileID: 2933978818323176945}
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Lemon.prefab
-  - component: {fileID: -195807810747002551}
-=======
-  - component: {fileID: 1244709319371779999}
-  - component: {fileID: -2759784721858030535}
->>>>>>> Stashed changes:Assets/Prefab/Lemon.prefab
+  - component: {fileID: 740186267214018678}
+  - component: {fileID: 6190839834456103270}
+  - component: {fileID: 8842089417096096862}
+  - component: {fileID: -79883682656689259}
+  - component: {fileID: 6056356890051684515}
+  - component: {fileID: -2035601289985889658}
   m_Layer: 0
-  m_Name: Lemon
+  m_Name: Apple
   m_TagString: Fruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1140637692413581889
+--- !u!4 &740186267214018678
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8131580889076775511}
+  m_GameObject: {fileID: 7009310272787306202}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -40,13 +36,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2357317778979217988
+--- !u!212 &6190839834456103270
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8131580889076775511}
+  m_GameObject: {fileID: 7009310272787306202}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -81,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: -2062665095
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1366144071, guid: a03c2610221b14940b818fb271b448fa, type: 3}
+  m_Sprite: {fileID: 1847463989, guid: a03c2610221b14940b818fb271b448fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -92,13 +88,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &3281272216351533942
+--- !u!60 &8842089417096096862
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8131580889076775511}
+  m_GameObject: {fileID: 7009310272787306202}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -136,31 +132,28 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.43942887, y: 0.3759051}
-      - {x: 0.37906444, y: 0.44070294}
-      - {x: 0.19093966, y: 0.44203147}
-      - {x: -0.064708695, y: 0.37939063}
-      - {x: -0.19484454, y: 0.31137282}
-      - {x: -0.31618166, y: 0.19672513}
-      - {x: -0.3818515, y: 0.06735055}
-      - {x: -0.4477867, y: -0.1883144}
-      - {x: -0.44328108, y: -0.38140586}
-      - {x: -0.38297105, y: -0.4458592}
-      - {x: -0.18664114, y: -0.44786286}
-      - {x: 0.060882647, y: -0.38407916}
-      - {x: 0.1880437, y: -0.31853935}
-      - {x: 0.31504056, y: -0.19124894}
-      - {x: 0.38140583, y: -0.059218153}
-      - {x: 0.44328108, y: 0.17773336}
+    - - {x: 0.25625956, y: 0.25617895}
+      - {x: -0.05867219, y: 0.50257814}
+      - {x: -0.18715847, y: 0.5038488}
+      - {x: -0.38210964, y: 0.3143744}
+      - {x: -0.5051563, y: 0.19132775}
+      - {x: -0.5051563, y: 0.061329305}
+      - {x: -0.4433334, y: -0.18336877}
+      - {x: -0.3773049, y: -0.319248}
+      - {x: -0.18679631, y: -0.5077344}
+      - {x: 0.18359327, y: -0.5077344}
+      - {x: 0.37884212, y: -0.3112318}
+      - {x: 0.43812484, y: -0.19195253}
+      - {x: 0.43554664, y: 0.060546666}
   m_UseDelaunayMesh: 0
---- !u!50 &2933978818323176945
+--- !u!50 &-79883682656689259
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8131580889076775511}
+  m_GameObject: {fileID: 7009310272787306202}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -180,33 +173,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Lemon.prefab
---- !u!114 &-195807810747002551
-=======
---- !u!114 &1244709319371779999
->>>>>>> Stashed changes:Assets/Prefab/Lemon.prefab
+--- !u!114 &6056356890051684515
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8131580889076775511}
+  m_GameObject: {fileID: 7009310272787306202}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03326de646ce4495c910959775adf720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Lemon.prefab
-  lifetime: 2
-=======
   lifetime: 2.5
---- !u!61 &-2759784721858030535
+--- !u!61 &-2035601289985889658
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8131580889076775511}
+  m_GameObject: {fileID: 7009310272787306202}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -245,4 +231,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
->>>>>>> Stashed changes:Assets/Prefab/Lemon.prefab

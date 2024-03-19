@@ -12,12 +12,8 @@ GameObject:
   - component: {fileID: 3462451540848684180}
   - component: {fileID: 935676809167124128}
   - component: {fileID: 3416834762728257153}
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Peach.prefab
-  - component: {fileID: -8126461249568172718}
-=======
   - component: {fileID: 6297700734815848772}
   - component: {fileID: -1471100873545215002}
->>>>>>> Stashed changes:Assets/Prefab/Peach.prefab
   m_Layer: 0
   m_Name: Peach
   m_TagString: Fruit
@@ -175,11 +171,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Peach.prefab
---- !u!114 &-8126461249568172718
-=======
 --- !u!114 &6297700734815848772
->>>>>>> Stashed changes:Assets/Prefab/Peach.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,9 +183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03326de646ce4495c910959775adf720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Peach.prefab
-  lifetime: 2
-=======
   lifetime: 2.5
 --- !u!61 &-1471100873545215002
 BoxCollider2D:
@@ -240,4 +229,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
->>>>>>> Stashed changes:Assets/Prefab/Peach.prefab
