@@ -12,12 +12,8 @@ GameObject:
   - component: {fileID: 1565199230084311840}
   - component: {fileID: 2346433448477163921}
   - component: {fileID: 3117382844513901957}
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Strawberry.prefab
-  - component: {fileID: 4718258710862038464}
-=======
   - component: {fileID: 78958740068220991}
   - component: {fileID: 8673246290926754340}
->>>>>>> Stashed changes:Assets/Prefab/Strawberry.prefab
   m_Layer: 0
   m_Name: Strawberry
   m_TagString: Fruit
@@ -177,11 +173,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Strawberry.prefab
---- !u!114 &4718258710862038464
-=======
 --- !u!114 &78958740068220991
->>>>>>> Stashed changes:Assets/Prefab/Strawberry.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -193,9 +185,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03326de646ce4495c910959775adf720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Strawberry.prefab
-  lifetime: 2
-=======
   lifetime: 2.5
 --- !u!61 &8673246290926754340
 BoxCollider2D:
@@ -242,4 +231,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
->>>>>>> Stashed changes:Assets/Prefab/Strawberry.prefab

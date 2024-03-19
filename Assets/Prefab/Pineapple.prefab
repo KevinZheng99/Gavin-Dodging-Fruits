@@ -12,12 +12,8 @@ GameObject:
   - component: {fileID: 2890116291656179647}
   - component: {fileID: 2076780809098277229}
   - component: {fileID: -8382074057058969650}
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Pineapple.prefab
-  - component: {fileID: -4204768804179046607}
-=======
   - component: {fileID: -1055570894886078979}
   - component: {fileID: 4605639165958029906}
->>>>>>> Stashed changes:Assets/Prefab/Pineapple.prefab
   m_Layer: 0
   m_Name: Pineapple
   m_TagString: Fruit
@@ -174,11 +170,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Pineapple.prefab
---- !u!114 &-4204768804179046607
-=======
 --- !u!114 &-1055570894886078979
->>>>>>> Stashed changes:Assets/Prefab/Pineapple.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,9 +182,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03326de646ce4495c910959775adf720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Pineapple.prefab
-  lifetime: 2
-=======
   lifetime: 2.5
 --- !u!61 &4605639165958029906
 BoxCollider2D:
@@ -239,4 +228,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
->>>>>>> Stashed changes:Assets/Prefab/Pineapple.prefab

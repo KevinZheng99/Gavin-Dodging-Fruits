@@ -173,11 +173,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Watermelon.prefab
---- !u!114 &8379465093140297936
-=======
 --- !u!114 &-6231620169548115399
->>>>>>> Stashed changes:Assets/Prefab/Watermelon.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -12,12 +12,8 @@ GameObject:
   - component: {fileID: 8661515324017767965}
   - component: {fileID: 8564818818819016761}
   - component: {fileID: 3746811276751387977}
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Banana.prefab
-  - component: {fileID: 6067951775516835966}
-=======
   - component: {fileID: -273149984277009687}
   - component: {fileID: -3528266008267248273}
->>>>>>> Stashed changes:Assets/Prefab/Banana.prefab
   m_Layer: 0
   m_Name: Banana
   m_TagString: Fruit
@@ -175,11 +171,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Banana.prefab
---- !u!114 &6067951775516835966
-=======
 --- !u!114 &-273149984277009687
->>>>>>> Stashed changes:Assets/Prefab/Banana.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,9 +183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03326de646ce4495c910959775adf720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Banana.prefab
-  lifetime: 2
-=======
   lifetime: 2.5
 --- !u!61 &-3528266008267248273
 BoxCollider2D:
@@ -240,4 +229,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
->>>>>>> Stashed changes:Assets/Prefab/Banana.prefab

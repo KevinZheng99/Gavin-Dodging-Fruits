@@ -12,12 +12,8 @@ GameObject:
   - component: {fileID: 2357317778979217988}
   - component: {fileID: 3281272216351533942}
   - component: {fileID: 2933978818323176945}
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Lemon.prefab
-  - component: {fileID: -195807810747002551}
-=======
   - component: {fileID: 1244709319371779999}
   - component: {fileID: -2759784721858030535}
->>>>>>> Stashed changes:Assets/Prefab/Lemon.prefab
   m_Layer: 0
   m_Name: Lemon
   m_TagString: Fruit
@@ -180,11 +176,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Lemon.prefab
---- !u!114 &-195807810747002551
-=======
 --- !u!114 &1244709319371779999
->>>>>>> Stashed changes:Assets/Prefab/Lemon.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,9 +188,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03326de646ce4495c910959775adf720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Lemon.prefab
-  lifetime: 2
-=======
   lifetime: 2.5
 --- !u!61 &-2759784721858030535
 BoxCollider2D:
@@ -245,4 +234,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
->>>>>>> Stashed changes:Assets/Prefab/Lemon.prefab

@@ -12,12 +12,8 @@ GameObject:
   - component: {fileID: 2956954501570727283}
   - component: {fileID: 6124981557089248372}
   - component: {fileID: 2976609529639561268}
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Cherry.prefab
-  - component: {fileID: -736549347602377377}
-=======
   - component: {fileID: -8403606768741014987}
   - component: {fileID: -7743844224090652871}
->>>>>>> Stashed changes:Assets/Prefab/Cherry.prefab
   m_Layer: 0
   m_Name: Cherry
   m_TagString: Fruit
@@ -176,11 +172,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Cherry.prefab
---- !u!114 &-736549347602377377
-=======
 --- !u!114 &-8403606768741014987
->>>>>>> Stashed changes:Assets/Prefab/Cherry.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -192,9 +184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03326de646ce4495c910959775adf720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Cherry.prefab
-  lifetime: 2
-=======
   lifetime: 2.5
 --- !u!61 &-7743844224090652871
 BoxCollider2D:
@@ -241,4 +230,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
->>>>>>> Stashed changes:Assets/Prefab/Cherry.prefab

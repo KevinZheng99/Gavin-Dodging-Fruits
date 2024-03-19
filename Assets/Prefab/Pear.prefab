@@ -12,12 +12,8 @@ GameObject:
   - component: {fileID: 4132641256612544655}
   - component: {fileID: 3252898313739768474}
   - component: {fileID: 7594015341081009649}
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Pear.prefab
-  - component: {fileID: 5998005761640431152}
-=======
   - component: {fileID: -2375730422401353103}
   - component: {fileID: -5485291055968625099}
->>>>>>> Stashed changes:Assets/Prefab/Pear.prefab
   m_Layer: 0
   m_Name: Pear
   m_TagString: Fruit
@@ -174,11 +170,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Pear.prefab
---- !u!114 &5998005761640431152
-=======
 --- !u!114 &-2375730422401353103
->>>>>>> Stashed changes:Assets/Prefab/Pear.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,9 +182,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03326de646ce4495c910959775adf720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Pear.prefab
-  lifetime: 2
-=======
   lifetime: 2.5
 --- !u!61 &-5485291055968625099
 BoxCollider2D:
@@ -239,4 +228,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
->>>>>>> Stashed changes:Assets/Prefab/Pear.prefab

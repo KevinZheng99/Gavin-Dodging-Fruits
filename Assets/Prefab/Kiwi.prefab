@@ -12,12 +12,8 @@ GameObject:
   - component: {fileID: 4600718048814828885}
   - component: {fileID: 726841574738763963}
   - component: {fileID: 232584707293612745}
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Kiwi.prefab
-  - component: {fileID: -2613408773921180523}
-=======
   - component: {fileID: 662676263629226553}
   - component: {fileID: 7823262326939828561}
->>>>>>> Stashed changes:Assets/Prefab/Kiwi.prefab
   m_Layer: 0
   m_Name: Kiwi
   m_TagString: Fruit
@@ -179,11 +175,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Kiwi.prefab
---- !u!114 &-2613408773921180523
-=======
 --- !u!114 &662676263629226553
->>>>>>> Stashed changes:Assets/Prefab/Kiwi.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,9 +187,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03326de646ce4495c910959775adf720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream:Assets/Prefab/Fruits/Kiwi.prefab
-  lifetime: 2
-=======
   lifetime: 2.5
 --- !u!61 &7823262326939828561
 BoxCollider2D:
@@ -244,4 +233,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
->>>>>>> Stashed changes:Assets/Prefab/Kiwi.prefab
