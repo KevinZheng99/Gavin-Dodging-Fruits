@@ -2,50 +2,68 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
 
-    private SpriteRenderer sprite; //Reference to Sprite for flip
-    private Rigidbody2D rb; // Reference to the Rigidbody2D component
-    private Animator anim; //Reference to animation
-    
+    private float dirX = 0f; 
+    private SpriteRenderer sprite; 
+    private Rigidbody2D rb;
+    private Animator anim; 
 
-    
-    void Start()
+    private enum MovementState { idle, running, jumping };
+
+
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody2D component from the player object
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
 
-    void Update()
+
+    private void Update()
     {
-        float dirX = Input.GetAxisRaw("Horizontal");
+        dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y); // Set the velocity to move the player
 
-        if (Input.GetButtonDown("Jump")) //Uses unity input manager to jump
+        if (Input.GetButtonDown("Jump") && Mathf.Abs(rb.velocity.y) < 0.001f) // Checks if on the ground before jumping
         {
-            rb.velocity = new Vector3(0, jumpForce, 0);
+            rb.velocity = new Vector3(0, jumpForce, 0);///AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
         }
 
-        if (dirX > 0f) // Trigger the running animation if there's horizontal movement
+        UpdateAnimationState();
+    }
+
+    private void UpdateAnimationState()
+    {
+        MovementState state;
+
+        
+        if (dirX > 0f) 
         {
-            anim.SetBool("isRunning", true);
+            state = MovementState.running;
             sprite.flipX = false;
         }
+
         else if (dirX < 0f)
         {
-            anim.SetBool("isRunning", true);
+            state = MovementState.running;
             sprite.flipX = true;
         }
         else
         {
-            anim.SetBool("isRunning", false);
+            state = MovementState.idle;
         }
 
-    }
+        if (Mathf.Abs(rb.velocity.y) > 0.001f) // check for being in air
+        {
+            state = MovementState.jumping;
 
+        }
+
+        anim.SetInteger("state", (int)state);
+    }
 }
 
