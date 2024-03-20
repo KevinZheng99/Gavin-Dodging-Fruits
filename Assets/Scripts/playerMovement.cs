@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private enum MovementState { idle, running, jumping };
 
     [SerializeField] private AudioSource NicotineSoundEffect;
+    [SerializeField] private AudioSource jumpSoundEffect;
     private float idleTimer = 0f;
 
     private void Start()
@@ -33,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && Mathf.Abs(rb.velocity.y) < 0.001f) // Checks if on the ground before jumping
         {
             rb.velocity = new Vector3(0, jumpForce, 0);///AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            jumpSoundEffect.Play();
         }
 
         UpdateAnimationState();
