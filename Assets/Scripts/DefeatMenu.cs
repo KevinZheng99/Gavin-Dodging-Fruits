@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class DefeatMenu : MonoBehaviour
 {
     public GameObject defeatMenuUI;
+    public AudioSource defeatMusic;
+    public AudioSource gameMusic;
 
     bool gameHasEnded = false;
 
@@ -19,6 +21,8 @@ public class DefeatMenu : MonoBehaviour
     void Pause () {
         defeatMenuUI.SetActive(true);
         Time.timeScale = 0f;
+        gameMusic.Stop();
+        defeatMusic.Play();
     }
 
     public void Restart() {
@@ -26,5 +30,7 @@ public class DefeatMenu : MonoBehaviour
         Time.timeScale = 1f;
         PlayerStats.Instance.Heal(3);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        defeatMusic.Stop(); 
+        gameMusic.Play();
     }
 }

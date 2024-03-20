@@ -5,6 +5,8 @@ using System.Collections;
 public class PlayerCollision : MonoBehaviour
 {   
     private Animator anim;
+    [SerializeField] private AudioSource OofSoundEffect;
+    [SerializeField] private AudioSource OwSoundEffect;
 
     private void Start()
     {
@@ -14,6 +16,14 @@ public class PlayerCollision : MonoBehaviour
     void OnCollisionEnter2D (Collision2D collisionInfo) {
         if (collisionInfo.collider.tag == "Fruit") {
             ///Destroy(collisionInfo.collider.gameObject, 0f);
+            // Randomly choose a sound to play
+        int soundChoice = Random.Range(0, 2); // Generates 0 or 1
+
+        if (soundChoice == 0) {
+            OofSoundEffect.Play();
+        } else {
+            OwSoundEffect.Play();
+        }
             PlayerStats.Instance.TakeDamage(1);
         }
 

@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
 
     private enum MovementState { idle, running, jumping };
 
+    [SerializeField] private AudioSource NicotineSoundEffect;
+    private float idleTimer = 0f;
 
     private void Start()
     {
@@ -34,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         UpdateAnimationState();
+        UpdateIdleTimer();
     }
 
     private void UpdateAnimationState()
@@ -64,5 +67,24 @@ public class PlayerMovement : MonoBehaviour
         }
 
         anim.SetInteger("state", (int)state);
+    }
+
+    private void UpdateIdleTimer()
+    {
+        if (Mathf.Abs(dirX) > 0f || Mathf.Abs(rb.velocity.y) > 0.001f)
+        {
+            idleTimer = 0f;
+        }
+        else 
+        {
+            idleTimer += Time.deltaTime;
+            
+            // Play the sound effect if the player has been idle for x seconds
+            if (idleTimer >= 3f)
+            {
+                NicotineSoundEffect.Play();
+                idleTimer = 0f; // Reset the timer after playing the sound
+            }
+        }
     }
 }
