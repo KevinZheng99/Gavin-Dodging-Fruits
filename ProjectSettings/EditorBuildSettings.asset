@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScreen.unity
     guid: 71a5c627914822e4f82f05673b55ba5a
   - enabled: 1
-    path: Assets/Scenes/Gavomove 2.unity
-    guid: e1a72cc8eb490f245924ad632f241a79
+    path: Assets/Scenes/Gavo kevin ver.unity
+    guid: a503cfdacf7466645982aaa83b56c65a
   m_configObjects: {}
