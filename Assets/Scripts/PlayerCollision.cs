@@ -20,7 +20,6 @@ public class PlayerCollision : MonoBehaviour
         if (PlayerStats.Instance.Health == 0) {
             die();
             StartCoroutine(ShowDefeatMenuAfterDelay(1f)); // Start coroutine to delay the defeat menu
-
         }
     }
 
@@ -28,11 +27,12 @@ public class PlayerCollision : MonoBehaviour
     {
         anim.SetTrigger("death");
     }
-    // Coroutine to wait for a specified delay before showing the defeat menu
+
+    // wait for a specified delay before showing the defeat menu
     IEnumerator ShowDefeatMenuAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay); // Wait for the specified delay
-        FindObjectOfType<DefeatMenu>().EndGame(); // Show the defeat menu after the delay
+        FindObjectOfType<DefeatMenu>().EndGame();
     }
 }
 
