@@ -13,17 +13,17 @@ public class PlayerCollision : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    void OnCollisionEnter2D (Collision2D collisionInfo) {
-        if (collisionInfo.collider.tag == "Fruit") {
-            ///Destroy(collisionInfo.collider.gameObject, 0f);
+    void OnTriggerEnter2D (Collider2D collider) {
+        Debug.Log(collider);
+        if (collider.tag == "Fruit") {
             // Randomly choose a sound to play
-        int soundChoice = Random.Range(0, 2); // Generates 0 or 1
+            int soundChoice = Random.Range(0, 2); // Generates 0 or 1
 
-        if (soundChoice == 0) {
-            OofSoundEffect.Play();
-        } else {
-            OwSoundEffect.Play();
-        }
+            if (soundChoice == 0) {
+                OofSoundEffect.Play();
+            } else {
+                OwSoundEffect.Play();
+            }
             PlayerStats.Instance.TakeDamage(1);
         }
 
